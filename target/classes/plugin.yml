@@ -1,0 +1,27 @@
+name: HubControl
+main: be.exacu.Spigot.HubControl
+version: 1.0
+api-version: 1.15
+author: ExZiByte
+description: ExaCube Network Hub Controller Plugin
+prefix: HubControl
+
+depend: ['Honeycomb']
+
+commands:
+   gmc:
+     usage: /gmc
+     description: Shortened command to switch to creative
+     aliases: [gamemodec]
+   gms:
+     usage: /gms
+     description: Shortened command to switch to survival
+     aliases: [gamemodes]
+   gma:
+     usage: /gma
+     description: Shortened command to switch to adventure
+     aliases: [gamemodea]
+   gmsp:
+     usage: /gmsp
+     description: Shortened command to switch to spectator
+     aliases: [gamemodesp]
