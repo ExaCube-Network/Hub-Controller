@@ -11,8 +11,8 @@ public class GMC implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String arg, String[] args) {
-        Player p = (Player) sender;
         if(sender instanceof Player){
+            Player p = (Player) sender;
             if(p.hasPermission("exacube.gamemode.creative")){
                 p.setGameMode(GameMode.CREATIVE);
                 p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&5&lExa&7&lCube> &6Successfully set your gamemode to &ccreative!"));

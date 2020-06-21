@@ -18,10 +18,10 @@ public class HubControl extends JavaPlugin {
         instance = this;
         getLogger().info("(!) ExaCube: Hub Control Plugin Loading");
 
-        this.getCommand("gmc").setExecutor((CommandExecutor) new GMC());
-        this.getCommand("gms").setExecutor((CommandExecutor) new GMS());
-        this.getCommand("gma").setExecutor((CommandExecutor) new GMA());
-        this.getCommand("gmsp").setExecutor((CommandExecutor) new GMSP());
+        this.getCommand("gmc").setExecutor(new GMC());
+        this.getCommand("gms").setExecutor(new GMS());
+        this.getCommand("gma").setExecutor(new GMA());
+        this.getCommand("gmsp").setExecutor(new GMSP());
 
         final PluginManager pm = getServer().getPluginManager();
 
