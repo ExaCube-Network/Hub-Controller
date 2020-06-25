@@ -31,7 +31,7 @@ public class Join implements Listener {
         ItemStack menuItem = new ItemStack(Material.NETHER_STAR);
         ItemMeta menuMeta = menuItem.getItemMeta();
         menuMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', "&5&lExa&7&lCube &7Hub Menu"));
-        ArrayList<String> menuLore = new ArrayList<String>();
+        ArrayList<String> menuLore = new ArrayList<>();
         menuLore.add(ChatColor.translateAlternateColorCodes('&', "&7Use this item to select which"));
         menuLore.add(ChatColor.translateAlternateColorCodes('&', "&7server you want to join!"));
         menuMeta.setLore(menuLore);

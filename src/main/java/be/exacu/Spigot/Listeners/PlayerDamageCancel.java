@@ -16,7 +16,7 @@ public class PlayerDamageCancel implements Listener {
     @EventHandler
     public void onDamage(EntityDamageEvent e){
         if(e.getEntity() instanceof Player){
-            Player p = ((Player) e.getEntity()).getPlayer();
+            Player p = (Player) e.getEntity();
             p.setHealth(20);
             e.setCancelled(true);
         }

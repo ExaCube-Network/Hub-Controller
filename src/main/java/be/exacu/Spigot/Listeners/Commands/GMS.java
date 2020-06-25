@@ -11,9 +11,9 @@ public class GMS implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String arg, String[] args) {
-        Player p = (Player) sender;
         if(sender instanceof Player){
-            if(p.hasPermission("exacube.gamemode.survival")){
+            Player p = (Player) sender;
+            if(p.hasPermission("minecraft.command.gamemode")){
                 p.setGameMode(GameMode.SURVIVAL);
                 p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&5&lExa&7&lCube> &6Successfully set your gamemode to &csurvival!"));
             }
